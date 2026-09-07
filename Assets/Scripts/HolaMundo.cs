@@ -8,10 +8,8 @@ public class HolaMundo : MonoBehaviour
     void Start()
     {
         x = 0;
-        print("Algo Paso");
 
-        Debug.LogWarning("Algo Salio medianamente mal");
-        Debug.LogError("Algo Salio muy mal");
+        Debug.Log("Hola desde Start aqui comienza mi juego");
     }
 
     // Update is called once per frame
@@ -30,7 +28,7 @@ public class HolaMundo : MonoBehaviour
 
     private void LateUpdate()
     {
-        Debug.LogWarning("Hola desde Late Update");
+        Debug.LogError("Error al actualizar");
     }
 
     private void OnEnable()
