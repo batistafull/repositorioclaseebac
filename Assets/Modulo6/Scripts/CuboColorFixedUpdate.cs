@@ -1,19 +1,21 @@
 using UnityEngine;
 
-public class CapsulaModulo6 : MonoBehaviour
+public class CuboColorFixedUpdate : MonoBehaviour
 {
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<MeshRenderer>().material.color = new Color(Random.value, Random.value, Random.value);
+        
+    }
+
+    void FixedUpdate()
+    {
+        GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
     }
 }
